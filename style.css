@@ -3,4 +3,66 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
+  }
+
+  :root {
+    --primary-background-color:#F2F5F6;  /*  */
+    --secondary-background-color:#043A53;
+    --primary-button-color:#043A53;
+    --primary-text-color:#12141D;
+    --primary-font-family:Lato;
+    --primary-headings-font-size: 60px;
+    --primary-big-title-font-size:64px;
+    --primary-navbar-links-font-size:16px;
+  }
+
+   body{
+    max-width: 1440px;
+    font-family: var(--primary-font-family);
+  }
+
+  section {
+    padding-inline: 150px; /* Left & Right padding */
+    padding-block: 100px; /* Top & Bottom padding */
+  }
+
+  button{
+    background-color: var(--primary-button-color);
+    padding-block: 16px;
+  }
+
+  h1 {
+    font-size: 2.5rem; /* 40px */
+    line-height: 1.2;
+  }
+  
+  h2 {
+    font-size: 2rem; /* 32px */
+    line-height: 1.3;
+  }
+  
+  h3 {
+    font-size: 1.75rem; /* 28px */
+    line-height: 1.3;
+  }
+  
+  h4 {
+    font-size: 1.5rem; /* 24px */
+    line-height: 1.4;
+  }
+  
+  h5 {
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.5;
+  }
+  
+  h6 {
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.5;
+  }
+  
+  p {
+    font-size: 1rem; /* 16px */
+    line-height: 1.6;
   }
