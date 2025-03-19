@@ -123,3 +123,33 @@ opacity: 50%;
   }
   
 }
+
+/* -------Metrics-Section-css--------- */
+
+.metrics-container {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding-inline: 120px;
+  padding-block: 80px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.metric {
+  padding: 20px;
+  /* min-width: 200px; */
+}
+
+.metric-value {
+  font-size: 48px;
+  font-weight: bold;
+  color: #043A53;
+  margin-bottom: 10px;
+}
+
+.metric-label {
+  font-size: 18px;
+  color: #444;
+}
+
