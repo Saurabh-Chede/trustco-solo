@@ -1,68 +1,115 @@
 /* Apply border-box sizing globally */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  :root {
-    --primary-background-color:#F2F5F6;  /*  */
-    --secondary-background-color:#043A53;
-    --primary-button-color:#043A53;
-    --primary-text-color:#12141D;
-    --primary-font-family:Lato;
-    --primary-headings-font-size: 60px;
-    --primary-big-title-font-size:64px;
-    --primary-navbar-links-font-size:16px;
-  }
+:root {
+  --primary-background-color: #f2f5f6; /*  */
+  --secondary-background-color: #043a53;
+  --primary-button-color: #043a53;
+  --primary-text-color: #12141d;
+  --primary-font-family: Lato;
+  --primary-headings-font-size: 60px;
+  --primary-big-title-font-size: 64px;
+  --primary-navbar-links-font-size: 16px;
+}
 
-   body{
-    max-width: 1440px;
-    font-family: var(--primary-font-family);
-  }
+body {
+  
+  font-family: var(--primary-font-family);
+  justify-content: center;
+  margin: 0 auto;
+  background-color: var(--primary-background-color);
+}
 
-  section {
-    padding-inline: 150px; /* Left & Right padding */
-    padding-block: 100px; /* Top & Bottom padding */
-  }
+button {
+  background-color: var(--primary-button-color);
+  padding-block: 16px;
+  outline: none;
+  color: white;
+  border: none;
 
-  button{
-    background-color: var(--primary-button-color);
-    padding-block: 16px;
-  }
+}
 
-  h1 {
-    font-size: 2.5rem; /* 40px */
-    line-height: 1.2;
-  }
+h1 {
+  font-size: 2.5rem; /* 40px */
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2rem; /* 32px */
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: 1.75rem; /* 28px */
+  line-height: 1.3;
+}
+
+h4 {
+  font-size: 1.5rem; /* 24px */
+  line-height: 1.4;
+}
+
+h5 {
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.5;
+}
+
+h6 {
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.5;
+}
+
+p {
+  font-size: 1rem; /* 16px */
+  line-height: 1.6;
+}
+
+/* --------------------------------- */
+
+/* Brand Section */
+.trusted-brands-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 0 auto;
+  gap: 60px;
   
-  h2 {
-    font-size: 2rem; /* 32px */
-    line-height: 1.3;
-  }
+}
+
+.trusted-brands-heading {
+text-align: center;
+color: #000000;
+font-size: 16px;
+font-family: Lato;
+opacity: 50%;
+}
+
+
+/* Brand Logos - Mobile First */
+.trusted-brands-logo-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows logos to wrap on smaller screens */
+  justify-content: center; /* Centers the logos horizontally */
+  align-items: center; /* Aligns items vertically */
+  gap: 20px; /* Adds space between logos */
   
-  h3 {
-    font-size: 1.75rem; /* 28px */
-    line-height: 1.3;
-  }
-  
-  h4 {
-    font-size: 1.5rem; /* 24px */
-    line-height: 1.4;
-  }
-  
-  h5 {
-    font-size: 1.25rem; /* 20px */
-    line-height: 1.5;
-  }
-  
-  h6 {
-    font-size: 1.125rem; /* 18px */
-    line-height: 1.5;
-  }
-  
-  p {
-    font-size: 1rem; /* 16px */
-    line-height: 1.6;
-  }
+}
+
+/* Single Logo Styling */
+.trusted-brands-logo {
+  width: 90px; /* Adjust size */
+  height: auto;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.trusted-brands-logo:hover {
+  filter: grayscale(0%);
+}
+
