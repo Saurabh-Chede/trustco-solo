@@ -153,3 +153,28 @@ opacity: 50%;
   color: #444;
 }
 
+/* Number-section-responsiveness added */
+
+@media (max-width: 768px) {
+  .metrics-container {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      margin: 0 auto;
+      padding-inline: 20px;
+      padding-block: 50px;
+ 
+  }
+
+ .metric-value{
+  font-size: 36px;
+ }
+
+ .metric-label {
+  font-size: 12px;
+  color: #444;
+}
+ 
+}
+
+
+
