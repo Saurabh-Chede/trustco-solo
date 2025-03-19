@@ -279,6 +279,80 @@ p {
   }
 }
 
+/* -----Hero-section-styles-------------- */
+
+.hero{
+  display: flex;
+  padding-inline: 100px;
+  padding-block: 120px;
+  gap: 24px;
+  
+}
+
+.hero__title-container{
+  display:flex;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  top: -18%;
+}
+
+.hero__title{
+  font-size: 3.3rem;
+  font-weight: 700;
+}
+
+.hero__cta-container{
+  display: flex;
+  margin-top: 24px;
+  justify-content: center;
+  gap: 32px;
+}
+
+.hero__description{
+  text-align: center;
+  margin-top: -80px;
+  margin-bottom: 40px;
+  color: #12141D;
+  opacity: 70%;
+}
+
+.hero__mobile-images{
+  display: none;
+}
+
+.hero__cta-button{
+  padding-inline: 18px;
+  padding-block: 12px;
+  border-radius: 2.4em;
+  background-color: #043A53;
+  box-shadow: 0px 23px 47px 0px #043A533D;
+  border: none;
+  color:#FFFFFF;
+}
+
+.hero__video-link a{
+  text-decoration: none;
+  color: #043A53;
+}
+
+.hero__video-link{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.hero__text{
+  margin-top: 20px;
+}
+
+.hero__brand-highlight{
+  color: #043A53;
+}
+
+
 /* ---------------------------------------- */
 
 /* Brand Section */
@@ -289,6 +363,7 @@ p {
   padding: 20px;
   margin: 0 auto;
   gap: 60px;
+  background-color: #FFFFFF;
   
 }
 
