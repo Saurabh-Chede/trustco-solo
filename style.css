@@ -188,6 +188,97 @@ p {
   display: none;
 }
 
+@media (max-width: 992px) {
+  .header-nav-links {
+      margin-left: 20px;
+  }
+  
+  .header-nav-links li {
+      margin: 0 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-navbar {
+      padding: 15px 5%;
+  }
+  
+  /* Show hamburger */
+  .header-hamburger {
+      display: block;
+  }
+  
+  /* Hide desktop auth */
+  .header-auth-buttons {
+      display: none;
+  }
+  
+  /* Nav menu styling for mobile */
+  .header-nav-links {
+      position: fixed;
+      top: 70px;
+      left: -100%;
+      width: 100%;
+      height: calc(100vh - 70px);
+      flex-direction: column;
+      background: #fff;
+      text-align: center;
+      transition: left 0.3s ease;
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+      margin-left: 0;
+      padding: 20px 0;
+      overflow-y: auto;
+  }
+  
+  .header-nav-links li {
+      margin: 15px 0;
+  }
+  
+  /* Show mobile auth */
+  .header-mobile-auth {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+      width: 100%;
+  }
+  
+  .header-mobile-auth .header-login-btn {
+      margin: 15px 0;
+      display: block;
+      width: 200px;
+      text-align: center;
+  }
+  
+  .header-mobile-auth .header-signup-btn {
+      margin: 5px 0 20px 0;
+      display: block;
+      width: 200px;
+      text-align: center;
+  }
+  
+  /* CSS-only toggle functionality */
+  #header-menu-toggle:checked ~ .header-nav-links {
+      left: 0;
+  }
+  
+  /* Animate to X when checked */
+  #header-menu-toggle:checked ~ .header-hamburger span:nth-child(1) {
+      top: 10px;
+      transform: rotate(135deg);
+  }
+  
+  #header-menu-toggle:checked ~ .header-hamburger span:nth-child(2) {
+      opacity: 0;
+      left: -60px;
+  }
+  
+  #header-menu-toggle:checked ~ .header-hamburger span:nth-child(3) {
+      top: 10px;
+      transform: rotate(-135deg);
+  }
+}
+
 /* ---------------------------------------- */
 
 /* Brand Section */
