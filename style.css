@@ -70,6 +70,126 @@ p {
 
 /* --------------------------------- */
 
+.header-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav-links {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.header-nav-links li {
+  margin: 0 15px;
+}
+
+.header-nav-links a {
+  text-decoration: none;
+  color: #475569;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.header-nav-links a:hover {
+  color: #003b52;
+}
+
+.header-auth-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.header-login-btn {
+  margin-right: 15px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #475569;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.header-login-btn:hover {
+  color: #003b52;
+}
+
+.header-signup-btn {
+  background-color: #003b52;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 10px 24px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.header-signup-btn:hover {
+  background-color: #002b3d;
+}
+
+/* Mobile menu checkbox - hidden visually but accessible */
+.header-menu-toggle {
+  display: none;
+}
+
+/* Menu toggle label */
+.header-hamburger {
+  display: none;
+  cursor: pointer;
+  width: 30px;
+  height: 25px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Hamburger icon bars */
+.header-hamburger span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #003b52;
+  border-radius: 3px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.header-hamburger span:nth-child(1) {
+  top: 0px;
+}
+
+.header-hamburger span:nth-child(2) {
+  top: 10px;
+}
+
+.header-hamburger span:nth-child(3) {
+  top: 20px;
+}
+
+/* Mobile auth buttons - initially hidden */
+.header-mobile-auth {
+  display: none;
+}
+
+/* ---------------------------------------- */
+
 /* Brand Section */
 .trusted-brands-section {
   display: flex;
