@@ -832,9 +832,127 @@ opacity: 50%;
     .trustco-testimonial__mobile-cta {
       display: none;
     }
+
+    /* Responsive adjustments for tablet */
+    @media (max-width: 992px) {
+      .trustco-testimonial__card {
+        width: calc(50% - 10px);
+      }
+
+      .trustco-testimonial-section{
+        padding-inline: 80px;
+      }
+
+      .trustco-testimonial__card{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    }
     
-   
-  
+    /* Mobile view adjustments */
+    @media (max-width: 768px) {
+      /* Convert to scrollable container for mobile */
+      .trustco-testimonial__cards-wrapper {
+        display: flex;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        flex-wrap: nowrap;
+      }
+
+      .trustco-testimonial-section{
+        padding-inline: 20px;
+        padding-block: 50px;
+      }
+
+      .trustco-testimonial__container {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .trustco-testimonial__header {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 16px;
+      }
+      
+      .trustco-testimonial__title {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 12px;
+      }
+      
+      /* Move navigation dots below the heading */
+      .trustco-testimonial__navigation {
+        order: 1;
+        margin-bottom: 24px;
+        margin-top: 0;
+      }
+      
+      /* Main content follows navigation */
+      .trustco-testimonial__cards-wrapper {
+        order: 2;
+      }
+      
+      /* Mobile CTA at the end */
+      .trustco-testimonial__mobile-cta {
+        order: 3;
+      }
+      
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .trustco-testimonial__cards-wrapper::-webkit-scrollbar {
+        display: none;
+      }
+      
+      .trustco-testimonial__card {
+        flex: 0 0 auto;
+        width: 280px;
+        scroll-snap-align: start;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      
+      /* Show the third testimonial on mobile */
+      .trustco-testimonial__card:nth-child(3) {
+        display: flex;
+        flex-direction: column;
+
+      }
+      
+      /* Mobile see all button */
+      .trustco-testimonial__mobile-cta {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+      }
+      
+      .trustco-testimonial__mobile-cta a {
+        color: #12141D;
+        text-decoration: none;
+        font-weight: 500;
+        padding: 8px 16px;
+        display: inline-block;
+      }
+      
+      .trustco-testimonial__link {
+        display: none;
+      }
+
+      .trustco-testimonial__name{
+        font-size: 13px;
+      }
+
+      .trustco-testimonial__position{
+        font-size: 11px;
+      }
+
+    }
+    
 
 /* -----------Footer-section-styles------------ */
 
