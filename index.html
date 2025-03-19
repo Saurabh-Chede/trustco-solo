@@ -14,8 +14,40 @@
   <body>
     <!-- Header section -->
     <header>
-      <nav>
-      </nav>
+      <nav class="header-navbar">
+        <div class="header-logo-container">
+            <img src="/assets/Logo.png" alt="">
+        </div>
+        
+        <!-- Hidden checkbox for menu toggle -->
+        <input type="checkbox" id="header-menu-toggle" class="header-menu-toggle">
+        
+        <!-- Hamburger menu label -->
+        <label for="header-menu-toggle" class="header-hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        
+        <ul class="header-nav-links">
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Solutions</a></li>
+            <li><a href="#">Company</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Contact</a></li>
+            <!-- Mobile auth buttons -->
+            <div class="header-mobile-auth">
+                <a href="#" class="header-login-btn">Login</a>
+                <a href="#" class="header-signup-btn">Sign up</a>
+            </div>
+        </ul>
+        
+        <!-- Desktop auth buttons -->
+        <div class="header-auth-buttons">
+            <a href="#" class="header-login-btn">Login</a>
+            <a href="#" class="header-signup-btn">Sign up</a>
+        </div>
+    </nav>
     </header>
 
     <!-- main section -->
@@ -32,7 +64,7 @@
     </section>
 
     <!-- Metrics section -->
-     
+
     <section class="metrics-container">
       <div class="metric">
           <div class="metric-value">$65 M</div>
