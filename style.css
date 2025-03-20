@@ -1069,6 +1069,105 @@ opacity: 50%;
   
 }
 
+@media (max-width: 992px) {
+  .mof-bio-container {
+      padding-right: 20px;
+  }
+
+  .mof-heading {
+      font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .mof-section {
+      flex-direction: column;
+      padding-inline: 20px;
+  }
+
+  .mof-bio-container {
+      order: 1;
+      padding-right: 0;
+      margin-top: 40px;
+      max-width: 100%;
+  }
+
+  .mof-portrait-wrapper {
+      order: 2;
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+  }
+
+  .mof-heading {
+      font-size: 30px;
+      font-weight: 700;
+      text-align: center;
+  }
+
+  .mof-quote-text {
+      text-align: center;
+  }
+
+  .mof-person-name,
+  .mof-person-position {
+      text-align: center;
+  }
+
+  .mof-button-container {
+      text-align: center;
+      width: 100%;
+  }
+
+  .mof-team-button {
+      display: flex;
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mof-section {
+      padding: 30px 15px;
+  }
+
+  .mof-heading {
+      font-size: 2rem;
+  }
+
+  .mof-quote-text {
+      font-size: 1rem;
+  }
+
+  .mof-portrait-wrapper {
+      transform: scale(0.9);
+      margin: 0 auto;
+      order: 2;
+  }
+
+  .mof-bio-container {
+      order: 1;
+  }
+
+  .mof-decoration-badge {
+      transform: scale(0.7);
+  }
+
+  .mof-team-thumbnail {
+      transform: scale(0.7);
+      top: 60%;
+      left: -10%;
+  }
+
+  .mof-team-button{
+      font-size: 14px;
+  }
+}
+
 
 
 /* -----bridges-section-styel--------------- */
