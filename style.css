@@ -1725,6 +1725,32 @@ opacity: 50%;
   display: inline-block;
 }
 
+ /* Make the blog section responsive */
+ @media (max-width: 992px) {
+  .blog-item {
+    width: calc(50% - 10px); /* 2 cards per row on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-item {
+    width: 280px; /* Fixed width for mobile */
+  }
+  
+  /* Hide the original see all button */
+  .blogs-view-all {
+    display: none;
+  }
+  
+  /* Show the mobile see all button */
+  .blogs-mobile-view-all {
+    display: block;
+  }
+
+  .blogs-title{
+    font-size: 27px;
+  }
+}
     
 
 /* -----------Footer-section-styles------------ */
