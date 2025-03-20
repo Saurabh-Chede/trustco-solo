@@ -68,8 +68,8 @@ p {
 
 main{
   max-width: 1440px;
-  margin: 0 auto;    /* Center karne ke liye */
-  width: 100%;       /* Responsive ke liye */
+  margin: 0 auto;    
+  width: 100%;      
 }
 
 /* --------------------------------- */
@@ -1795,7 +1795,7 @@ main{
 }
 
 .cs-cta-heading {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 30px;
@@ -1914,7 +1914,7 @@ main{
   }
 
   .cs-cta-heading {
-    font-size: 1rem;
+    font-size: 1.8rem;
   }
 
   .cs-cta-image-wrapper {
@@ -2008,7 +2008,7 @@ main{
   }
 
   .cs-cta-heading {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   .cs-cta-image-wrapper {
@@ -2100,12 +2100,11 @@ main{
 
   .cs-cta-mobile-crown {
     position: absolute;
-    width: 25px;
+    width: 30px;
     /* Smaller on mobile */
-    height: 25px;
+    height: 45px;
     border-radius: 50%;
     display: flex;
-    align-items: center;
     justify-content: center;
     left: 8%;
     top: 75%;
@@ -2114,7 +2113,7 @@ main{
   }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1024px) {
   .cs-cta-wrapper {
     position: relative;
   }
@@ -2133,7 +2132,7 @@ main{
   }
 
   .cs-cta-heading {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .cs-cta-circle-element {
@@ -2145,6 +2144,8 @@ main{
     left: -12%;
   }
 }
+
+
 
 /* -----------Footer-section-styles------------ */
 
