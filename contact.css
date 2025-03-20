@@ -325,10 +325,40 @@
     display: inline-flex;
     align-items: center;
   }
+
+   /* Contact Section Media Queries */
+   @media (max-width: 768px) {
+    .contact-container {
+      padding-inline: 20px;
+      padding-block: 10px;
+    }
   
- 
+    .contact-heading {
+      font-size: 2.1rem;
+      margin-bottom: 0.5rem;
+    }
   
- 
+    .contact-options-container {
+      gap: 3rem;
+    }
+  
+    .contact-option-card {
+      justify-content: flex-start;
+      align-items: flex-start;
+      text-align: left;
+      padding: 20px 20px;
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact-options-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 2.5rem;
+    }
+  }
+  
   
   /* ===============================
      CONTACT FORM SECTION
@@ -480,6 +510,47 @@
     border: solid white;
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
+  }
+
+   /* Contact Form Media Queries */
+   @media (max-width: 768px) {
+    .contact-us-form-section {
+      padding-inline: 20px;
+      padding-block: 10px;
+    }
+  
+    .contact-us-form-heading {
+      font-size: 2.1rem;
+      margin-bottom: 12px;
+    }
+  
+    .contact-us-form-row {
+      flex-direction: column;
+    }
+  
+    .contact-us-form-submit-container {
+      justify-content: center;
+    }
+
+    .contact-us-form-bottom-row {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+      }
+      
+      .contact-us-form-checkbox-container {
+        margin-bottom: 15px;
+      }
+      
+      .contact-us-form-submit-container {
+        width: 100%; /* Make button container full width on mobile */
+      }
+      
+      .contact-us-form-submit-btn {
+        width: 100%; /* Make button full width on mobile */
+      }
+    
+
   }
  
   
