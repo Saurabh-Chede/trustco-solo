@@ -732,11 +732,12 @@ opacity: 50%;
   display: grid;
   grid-template-columns: 1fr 3fr;
   gap: 2rem;
-  max-width: 1200px;
+  
   margin: 0 auto;
   padding-inline: 100px;
   padding-block: 120px;
   font-family: Lato;
+  background-color: #FFFFFF;
 }
 
 .benefit-cards {
@@ -933,6 +934,113 @@ opacity: 50%;
 }
  
 }
+
+/* -----bridges-section-styel--------------- */
+
+.bridges-banner {
+  display: flex;
+  gap: 70px;
+  margin: 0 auto;
+  min-height: 500px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.bridges-image-container {
+  flex: 1;
+  position: relative;
+}
+
+.bridges-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bridges-content {
+  flex: 1;
+  padding-block: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 150px;
+}
+
+.bridges-heading {
+  font-size: 42px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+.bridges-highlight {
+  color: #004766;
+}
+
+.bridges-text-subdued {
+  color: #8ca5b3;
+}
+
+.bridges-description {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.bridges-cta {
+  display: inline-flex;
+  align-items: center;
+  background-color: #004766;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 2.5em;
+  text-decoration: none;
+  font-weight: bold;
+  justify-content: space-between;
+  gap: 12px;
+  transition: background-color 0.3s;
+  width: fit-content;
+}
+
+.bridges-cta:hover {
+  background-color: #003752;
+}
+
+.bridges-award {
+  position: absolute;
+  bottom: 30px;
+  right: -40px;
+  width: 160px;
+  height: 160px;
+  background-color: #004766;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  border: 5px solid white;
+}
+
+.bridges-award-icon {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.bridges-award-number {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.bridges-award-text {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
 
 /* ------Testimonial-section-styles----------- */
 
