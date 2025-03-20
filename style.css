@@ -66,6 +66,12 @@ p {
   line-height: 1.6;
 }
 
+main{
+  max-width: 1440px;
+  margin: 0 auto;    /* Center karne ke liye */
+  width: 100%;       /* Responsive ke liye */
+}
+
 /* --------------------------------- */
 
 .header-navbar {
@@ -2144,6 +2150,10 @@ p {
 
 footer {
   line-height: 1.6;
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 20px;
 }
 /* Main Footer section */
 .footer-main {
