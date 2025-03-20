@@ -1041,6 +1041,69 @@ opacity: 50%;
   margin-top: 5px;
 }
 
+@media (max-width: 768px) {
+  .bridges-banner {
+      flex-direction: column;
+  }
+
+  .bridges-image-container {
+      order: 2;
+  }
+  
+  .bridges-content {
+      padding: 40px 20px;
+      order: 1;
+      text-align: center;
+  }
+
+  .bridges-cta {
+      margin: 0 auto;
+  }
+  
+  .bridges-award {
+      right: 20px;
+      bottom: -60px;
+      transform: scale(0.8);
+  }
+
+  .bridges-heading{
+      font-size: 30px;
+  }
+
+}
+
+@media (max-width: 820px) {
+  .bridges-banner {
+      flex-direction: column;
+      gap: 40px;
+  }
+  
+  .bridges-content {
+      padding: 40px 20px;
+      padding-right: 20px; /* Override the large right padding */
+  }
+  
+  .bridges-award {
+      right: 20px;
+      bottom: 20px; /* Keep it within the image section */
+  }
+  
+  .bridges-image-container {
+      height: 300px; /* Control the height on tablet */
+  }
+}
+
+/* Add iPad Air specific fixes */
+@media (width: 820px) and (height: 1180px) {
+  .bridges-banner {
+      min-height: 400px;
+  }
+  
+  .bridges-content {
+      padding-block: 60px;
+  }
+}
+
 
 /* ------Testimonial-section-styles----------- */
 
