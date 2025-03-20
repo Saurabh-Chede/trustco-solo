@@ -935,6 +935,142 @@ opacity: 50%;
  
 }
 
+/* ----------meet-our-founder-styels---------- */
+
+
+.mof-section {
+ 
+  margin: 0 auto;
+  padding-inline: 120px;
+  padding-block: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  background-color: #fff;
+  color: #222;
+  line-height: 1.6;
+}
+
+.mof-bio-container {
+  flex: 1;
+  min-width: 300px;
+  padding-right: 40px;
+  max-width: 600px;
+}
+
+.mof-portrait-wrapper {
+  flex: 1;
+  min-width: 300px;
+  position: relative;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.mof-heading {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.mof-quote-text {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  line-height: 1.7;
+}
+
+.mof-person-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.mof-person-position {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.mof-portrait-img {
+  width: 100%;
+  border-radius: 15px;
+  display: block;
+  
+  
+}
+
+.mof-decoration-badge {
+  position: absolute;
+  top: 30%;
+  left: 68%;
+  width: 60px;
+  height: 200px;
+  background-color: #0c3b52;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+
+.mof-decoration-badge img {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 10px;
+}
+
+.mof-icon-crown {
+  width: 30px;
+  height: 30px;
+  fill: none;
+  stroke: white;
+  stroke-width: 2;
+}
+
+.mof-team-thumbnail {
+  position: absolute;
+  bottom: -20px;
+  left: -10px;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.mof-team-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mof-team-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 25px;
+  background-color: #0c3b52;
+  color: white;
+  border-radius: 55px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.mof-team-button:hover {
+  background-color: #0a2e3f;
+  transform: translateY(-2px);
+}
+
+.mof-button-arrow {
+  margin-left: 10px;
+  margin-top: 5px;
+  
+}
+
+
+
 /* -----bridges-section-styel--------------- */
 
 .bridges-banner {
