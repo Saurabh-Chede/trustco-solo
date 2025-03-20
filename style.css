@@ -1898,61 +1898,6 @@ footer{
   transform: scale(1.1);
 }
 
-/* Bottom Footer section */
-.footer-bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px 24px;
-  background-color: #f5f7f9;
-  border-top: 1px solid #cfd0d3;
-  color: #6b7280;
-  font-size: 14px;
-}
-
-.footer-copyright {
-  flex: 1;
-}
-
-.footer-legal {
-  flex: 1;
-  text-align: center;
-}
-
-.footer-legal a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #6b7280;
-}
-
-.footer-legal a:hover {
-  color: #4b5563;
-  text-decoration: underline;
-}
-
-.footer-language {
-  flex: 1;
-  text-align: right;
-}
-
-.footer-language-selector {
-  display: inline-flex;
-  align-items: center;
-  background: none;
-  border: none;
-  color: #6b7280;
-  cursor: pointer;
-  font-size: 14px;
-  padding: 4px 8px;
-}
-
-.footer-language-selector img {
-  margin-right: 6px;
-}
-
-.footer-language-selector:hover {
-  color: #4b5563;
-}
 
 @media (max-width: 768px) {
   .footer-main {
@@ -1985,22 +1930,6 @@ footer{
       margin-left: 24px;
   }
 
-  .footer-bottom {
-      flex-direction: column;
-      gap: 12px;
-      text-align: center;
-  }
-  
-  .footer-copyright, .footer-legal, .footer-language {
-      flex: 0;
-      width: 100%;
-      text-align: center;
-  }
-  
-  .footer-legal {
-      margin: 8px 0;
-  }
-
   .footer-nav-column{
       text-align: left;
   }
@@ -2015,7 +1944,65 @@ footer{
   
 }
 
-/* ---------------------------------------------------- */
+/* ----------------Site-cresit-section-style----------------------- */
+
+.site-credit-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 120px;
+  padding-block: 24px;
+  background-color: #f5f7f9;
+  border-top: 1px solid #cfd0d3;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.site-credit-section__copyright {
+  flex: 1;
+}
+
+.site-credit-section__legal {
+  flex: 1;
+  text-align: center;
+}
+
+.site-credit-section__legal a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #6b7280;
+}
+
+.site-credit-section__legal a:hover {
+  color: #4b5563;
+  text-decoration: underline;
+}
+
+.site-credit-section__language {
+  flex: 1;
+  text-align: right;
+}
+
+.site-credit-section__language-selector {
+  display: inline-flex;
+  align-items: center;
+  background: none;
+  border: none;
+  color: #6b7280;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 4px 8px;
+}
+
+.site-credit-section__language-selector img {
+  margin-right: 6px;
+}
+
+.site-credit-section__language-selector:hover {
+  color: #4b5563;
+}
+
+
 
 
 
