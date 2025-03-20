@@ -581,7 +581,7 @@ opacity: 50%;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 120px 100px 60px;
+  padding: 120px 100px 0px;
   width: 100%;
   overflow-x: hidden;
   
@@ -624,15 +624,18 @@ opacity: 50%;
 }
 
 .video-section-media {
-  max-width: 1200px;
+  /* max-width: 1200px; */
+  
   margin-top: 34px;
   position: relative;
 }
 
 .video-section-media img {
   width: 100%;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   display: block; /* Remove any inline spacing */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .video-section-play {
@@ -643,8 +646,8 @@ opacity: 50%;
   background-color: white;
   color: #04314C;
   font-size: 32px;
-  width: 70px;
-  height: 70px;
+  width: 100px;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -661,7 +664,7 @@ opacity: 50%;
   /* Tablet Responsive */
   @media screen and (max-width: 1024px) {
     .video-section {
-        padding: 80px 50px 40px;
+        padding: 80px 50px 0px;
     }
     
     .video-section-heading h1 {
@@ -682,7 +685,7 @@ opacity: 50%;
 /* Mobile Responsive */
 @media screen and (max-width: 768px) {
     .video-section {
-        padding: 60px 20px 30px;
+        padding: 60px 20px 0px;
     }
     
     .video-section-content {
@@ -718,7 +721,7 @@ opacity: 50%;
 /* Small Mobile Responsive */
 @media screen and (max-width: 480px) {
     .video-section {
-        padding: 40px 15px 20px;
+        padding: 40px 15px 0px;
     }
     
     .video-section-heading h1 {
@@ -749,7 +752,7 @@ opacity: 50%;
 
 .feature-card {
   background-color: #F2F5F6;
-  border-radius: 1rem;
+  border-radius: 14px;
   padding: 2rem;
 }
 
@@ -827,7 +830,7 @@ opacity: 50%;
 
   .feature-card:nth-child(1),
   .feature-card:nth-child(2) {
-      height: 260px;
+      height: 300px;
   }
 }
 
@@ -882,6 +885,19 @@ opacity: 50%;
       font-size: 0.9rem;
   }
 }
+
+@media (width: 1024px) {
+
+  
+  .feature-card:nth-child(1),
+  .feature-card:nth-child(2) {
+      height: 380px;
+  }
+
+  
+}
+
+
 
 /* -------Metrics-Section-css--------- */
 
@@ -953,6 +969,7 @@ opacity: 50%;
   line-height: 1.6;
 }
 
+
 .mof-bio-container {
   flex: 1;
   min-width: 300px;
@@ -997,6 +1014,8 @@ opacity: 50%;
   width: 100%;
   border-radius: 15px;
   display: block;
+  z-index: 3;
+  position: relative;
   
   
 }
@@ -1012,7 +1031,7 @@ opacity: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 0;
+  
 }
 
 .mof-decoration-badge img {
@@ -1030,6 +1049,8 @@ opacity: 50%;
   stroke-width: 2;
 }
 
+
+
 .mof-team-thumbnail {
   position: absolute;
   bottom: -20px;
@@ -1037,7 +1058,7 @@ opacity: 50%;
   width: 200px;
   height: 200px;
   overflow: hidden;
-  z-index: 2;
+  z-index: 5;
 }
 
 .mof-team-thumbnail img {
@@ -1374,6 +1395,13 @@ opacity: 50%;
       color: #12141D;
       text-decoration: none;
       font-weight: 500;
+      display: inline-flex;
+      gap: 10px;
+    }
+
+    .trustco-testimonial__link_arrow{
+      width: 24px;
+      height: 24px;
     }
     
     /* Testimonials wrapper - desktop view */
@@ -1632,6 +1660,8 @@ opacity: 50%;
   color: #12141D;
   text-decoration: none;
   font-weight: 500;
+  display: inline-flex;
+  gap: 10px;
 }
 
 /* This is the container that will scroll horizontally */
@@ -1703,12 +1733,23 @@ opacity: 50%;
 }
 
 .blog-link {
-  display: inline-block;
+  display: inline-flex;
   color: #12141D;
   font-weight: 500;
   text-decoration: none;
   font-size: 14px;
+  gap: 12px;
+  
 }
+
+.blog-link-arrow-img{
+  width: 19px;
+  height: 19px;
+}
+
+
+
+
 
 /* Mobile see all button that appears after the cards */
 .blogs-mobile-view-all {
@@ -1750,8 +1791,146 @@ opacity: 50%;
   .blogs-title{
     font-size: 27px;
   }
+
+  .blogs-container{
+    padding-inline: 20px;
+  }
 }
-    
+  
+
+/* --------------------------------------------- */
+
+.cs-cta-banner {
+  margin: 0 auto;
+  background-color: #131926;
+  color: white;
+  overflow: hidden;
+}
+
+.cs-cta-hidden {
+  display: none;
+}
+
+.cs-cta-wrapper {
+  position: relative;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.cs-cta-content {
+  width: 50%;
+  padding-left: 40px;
+  z-index: 2;
+}
+
+.cs-cta-heading {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+.cs-cta-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: #F7B84B;
+  color: #000;
+  padding: 15px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.cs-cta-button-icon {
+  margin-left: 10px;
+}
+
+.cs-cta-subtext {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.cs-cta-image-wrapper {
+  position: relative;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cs-cta-image {
+  height: 90%;
+  object-fit: contain;
+  z-index: 1;
+  margin-bottom: -50px;
+  transform: scale(0.9);
+}
+
+.cs-cta-decorative {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.cs-cta-circle-element {
+  position: relative;
+  width: 90px;
+  height: 400px;
+  border-radius: 4em;
+  background-color: #F7B84B;
+  top: 40%;
+  left: 85%;
+  z-index: 0;
+}
+
+.cs-cta-circle-element img {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  right: 12%;
+  top: 3%;
+}
+
+.cs-cta-star-element {
+  position: absolute;
+  width: 80px;
+  height: 280px;
+  background-color: rgb(11, 59, 57);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: -30%;
+  right: 20%;
+  z-index: 2;
+  border-radius: 2.5em;
+}
+
+.cs-cta-star-element img {
+  position: absolute;
+  top: 4%;
+  width: 60px;
+  height: 60px;
+}
+
+.cs-cta-crown-element {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: -4%;
+  top: 80%;
+  z-index: 0;
+}
 
 /* -----------Footer-section-styles------------ */
 
@@ -1932,6 +2111,10 @@ footer{
 
   .footer-nav-column{
       text-align: left;
+  }
+
+  .footer-contributors-card{
+    width: 100%;
   }
 }
 
