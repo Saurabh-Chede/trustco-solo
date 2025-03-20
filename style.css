@@ -2002,6 +2002,46 @@ footer{
   color: #4b5563;
 }
 
+/* site cresit media querries */
+
+@media (max-width: 768px) {
+
+  .site-credit-section {
+      flex-direction: column;
+      gap: 12px;
+      text-align: center;
+  }
+
+  .site-credit-section__copyright,
+  .site-credit-section__legal,
+  .site-credit-section__language {
+      flex: 0;
+      width: 100%;
+      text-align: center;
+  }
+
+  .site-credit-section__legal {
+      margin: 8px 0;
+  }
+}
+
+@media (max-width:1024px) {
+
+  .site-credit-section {
+      padding-inline: 70px;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
+  .site-credit-section {
+      padding-inline: 0px;
+
+  }
+
+}
+
 
 
 
