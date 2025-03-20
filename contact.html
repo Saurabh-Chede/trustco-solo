@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <nav class="header-navbar">
+            <div class="header-logo-container">
+                <img src="/assets/Logo.png" alt="logo">
+            </div>
+            
+            <!-- Hidden checkbox for menu toggle -->
+            <input type="checkbox" id="header-menu-toggle" class="header-menu-toggle">
+            
+            <!-- Hamburger menu label -->
+            <label for="header-menu-toggle" class="header-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            
+            <ul class="header-nav-links">
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Solutions</a></li>
+                <li><a href="#">Company</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <!-- Mobile auth buttons -->
+                <div class="header-mobile-auth">
+                    <a href="#" class="header-login-btn">Login</a>
+                    <a href="#" class="header-signup-btn">Sign up</a>
+                </div>
+            </ul>
+            
+            <!-- Desktop auth buttons -->
+            <div class="header-auth-buttons">
+                <a href="#" class="header-login-btn">Login</a>
+                <a href="#" class="header-signup-btn">Sign up</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-container">
+            <h1 class="contact-heading">We are here to help</h1>
+            <p class="contact-subtitle">Contact us if you have any questions about our company. Our best team will provide your answer within a few hours.</p>
+            
+            <div class="contact-options-container">
+                <div class="contact-option-card">
+                    <div class="contact-icon-wrapper contact-email-icon">
+                        <img src="/assets/Email.png" alt="">
+                    </div>
+                    <h2 class="contact-option-title">Email Us</h2>
+                    <p class="contact-option-description">Ask anything by emailing us and we will respond within a few days.</p>
+                    <a href="#" class="contact-option-link">
+                        Send Email
+                        <span class="contact-link-arrow">
+                            <img src="/assets/tdesign_arrow-up.png" alt="">
+                        </span>
+                    </a>
+                </div>
+                
+                <div class="contact-option-card">
+                    <div class="contact-icon-wrapper contact-location-icon">
+                        <img src="/assets/Location.png" alt="">
+                    </div>
+                    <h2 class="contact-option-title">Drop In</h2>
+                    <p class="contact-option-description">You can meet us at our office and discuss the details of your questions.</p>
+                    <a href="#" class="contact-option-link">
+                        Get Direction
+                        <span class="contact-link-arrow">
+                            <img src="/assets/tdesign_arrow-up.png" alt="">
+                        </span>
+                        
+                    </a>
+                </div>
+                
+                <div class="contact-option-card">
+                    <div class="contact-icon-wrapper contact-phone-icon">
+                        <img src="/assets/Call.png" alt="">
+                    </div>
+                    <h2 class="contact-option-title">Call Us</h2>
+                    <p class="contact-option-description">Call us if your question requiers an respons.</p>
+                    <a href="#" class="contact-option-link">
+                        Send Email
+                        <span class="contact-link-arrow">
+                            <img src="/assets/tdesign_arrow-up.png" alt="">
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-us-form-section">
+            <div class="contact-us-form-container">
+                <h1 class="contact-us-form-heading">Leave us a message</h1>
+                <p class="contact-us-form-description">Contact us if you have any questions about our company. Our best team will provide your
+                    answer within a few hours.</p>
+        
+                <form class="contact-us-form">
+                    <div class="contact-us-form-row">
+                        <div class="contact-us-form-group">
+                            <span class="contact-us-form-icon"><img src="/assets/Group.png" alt=""></span>
+                            <input type="text" class="contact-us-form-input" placeholder="Name">
+                        </div>
+                        <div class="contact-us-form-group">
+                            <span class="contact-us-form-icon"><img src="/assets/material-symbols_mail-outline.png" alt=""></span>
+                            <input type="email" class="contact-us-form-input" placeholder="Email Address">
+                        </div>
+                    </div>
+        
+                    <div class="contact-us-form-row">
+                        <div class="contact-us-form-group">
+                            <span class="contact-us-form-icon"><img src="/assets/mdi_company.png" alt=""></span>
+                            <input type="text" class="contact-us-form-input" placeholder="Company Name">
+                        </div>
+                        <div class="contact-us-form-group">
+                            <span class="contact-us-form-icon"><img src="/assets/ion_call-outline.png" alt=""></span>
+                            <input type="tel" class="contact-us-form-input" placeholder="Contact number">
+                        </div>
+                    </div>
+        
+                    <div class="contact-us-form-group">
+                        <textarea class="contact-us-form-input" placeholder="How we can help?"></textarea>
+                    </div>
+        
+                   
+                    <div class="contact-us-form-bottom-row">
+                        <div class="contact-us-form-checkbox-container">
+                            <input type="checkbox" id="terms" class="contact-us-form-checkbox">
+                            <label for="terms">I agree with the <a href="#" class="contact-us-form-terms">Terms & Conditions</a></label>
+                        </div>
+                    
+                        <div class="contact-us-form-submit-container">
+                            <button type="submit" class="contact-us-form-submit-btn">Submit</button>
+                        </div>
+                    </div>
+                   
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-main">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img src="/assets/Logo.png" alt="Trustco Logo" />
+                </div>
+                <div class="footer-social">
+                    <a href="#"><img src="/assets/Facebook.png" alt="Facebook" /></a>
+                    <a href="#"><img src="/assets/insta.png" alt="Instagram" /></a>
+                    <a href="#"><img src="/assets/YT.png" alt="YouTube" /></a>
+                </div>
+            </div>
+            
+            <div class="footer-about">
+                <p>
+                    An awesome & poweful tools for your business, increase business
+                    revenue. with evaluating in depth variety of data sets and including
+                    the speed of tech adaptation we can build bridges between any
+                    companies and their customers.
+                </p>
+            </div>
+            
+            <div class="footer-nav">
+                <div class="footer-nav-column">
+                    <h3>Home</h3>
+                    <ul>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Solutions</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-nav-column">
+                    <h3>About Us</h3>
+                    <ul>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Career</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                ©2022-2023 Trustco.
+            </div>
+            <div class="footer-legal">
+                <a href="/terms">Term of Service</a>
+                <a href="/privacy">Privacy Policy</a>
+            </div>
+            <div class="footer-language">
+                <button class="footer-language-selector">
+                    <img src="/assets/global-line.png" alt="">
+                    English
+                    <img src="/assets/down arrow.png" alt="">
+                </button>
+            </div>
+        </div>
+    </footer> 
+</body>
+</html>
